@@ -28,7 +28,7 @@ def giou3df(box_a: BBox, box_b: BBox) -> float:
     return giou
 
 def giou3d():
-    return 1-giou3df
+    return 1-giou3df()
     
 
 def iou3df(sample_annotation: EvalBox, sample_result: EvalBox) -> float:
@@ -49,5 +49,5 @@ def iou3df(sample_annotation: EvalBox, sample_result: EvalBox) -> float:
 
     return iou
 
-def iou3d():
-    return 1-iou3df
+def iou3d(sample_annotation: EvalBox, sample_result: EvalBox):
+    return 1-iou3df()
